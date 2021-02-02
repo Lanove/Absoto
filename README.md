@@ -11,6 +11,16 @@ Looking for Premium Templates?
 ----------------
 **If you need more features please visit portfolio of mine which page link is [https://themeforest.net/user/gurayyarar/portfolio](http://bit.ly/2oPFpmQ)**
 
+Dependencies
+----------------
+**npm**
+```
+npm install node-sass
+npm install colors
+```
+**vscode extension**
+Run on Save by emeraldwalk
+
 Demo
 ----------------
 You can check the website preview with **[this link](https://gurayyarar.github.io/AdminBSBMaterialDesign/)**  

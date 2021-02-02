@@ -1,3 +1,7 @@
+// This script will run on every save of .scss files, to compile scss to css.
+// uses node-sass, colors npm dependencies 
+// and use Run on Save vscode extension by emeraldwalk (the config for run on save is on settings.json on .vscode folder)
+
 let fs = require('fs');
 let path = require('path');
 let sass = require('node-sass');

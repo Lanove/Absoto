@@ -5,5 +5,5 @@
         <Item>D:\Projects\Absoto</Item>
     </Directories>
     <Delay>0</Delay>
-    <Commandline>"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Projects\Absoto\SyncSettings.ffs_batch"</Commandline>
+    <Commandline>"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Projects\Absoto\BatchRun.ffs_batch"</Commandline>
 </FreeFileSync>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FreeFileSync XmlType="GUI" XmlFormat="17">
+<FreeFileSync XmlType="BATCH" XmlFormat="17">
     <Compare>
         <Variant>TimeAndSize</Variant>
         <Symlinks>Exclude</Symlinks>
@@ -19,6 +19,7 @@
             <Item>\System Volume Information\</Item>
             <Item>\$Recycle.Bin\</Item>
             <Item>\RECYCLE?\</Item>
+            <Item>\.git\</Item>
             <Item>*\thumbs.db</Item>
         </Exclude>
         <TimeSpan Type="None">0</TimeSpan>
@@ -35,7 +36,9 @@
     <PostSyncCommand Condition="Completion"/>
     <LogFolder/>
     <EmailNotification Condition="Always"/>
-    <Gui>
-        <GridViewType>Action</GridViewType>
-    </Gui>
+    <Batch>
+        <ProgressDialog Minimized="true" AutoClose="true"/>
+        <ErrorDialog>Show</ErrorDialog>
+        <PostSyncAction>None</PostSyncAction>
+    </Batch>
 </FreeFileSync>
