@@ -1,17 +1,21 @@
 {
-  "name": "adminbsb-materialdesign",
-  "version": "1.0.7",
-  "description": "AdminBSB - Free admin panel that is based on Bootstrap 3.x with Material Design",
+  "name": "absoto",
+  "version": "1.0.0",
+  "description": "Absoto",
   "main": "js/admin.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gurayyarar/AdminBSBMaterialDesign.git"
+    "url": "git+https://github.com/Lanove/Absoto.git"
   },
   "author": "Güray Yarar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gurayyarar/AdminBSBMaterialDesign/issues"
+    "url": "https://github.com/Lanove/Absoto/issues"
   },
-  "homepage": "https://github.com/gurayyarar/AdminBSBMaterialDesign#readme"
+  "homepage": "https://github.com/Lanove/Absoto#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "node-sass": "^5.0.0"
+  }
 }

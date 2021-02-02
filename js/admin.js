@@ -449,7 +449,7 @@ $.AdminBSB.browser = {
         } else if (browser === safari) {
             return 'safari';
         } else {
-            return '';
+         return '';
         }
     }
 }

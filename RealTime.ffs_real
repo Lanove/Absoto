@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="REAL" XmlFormat="2">
+    <Directories>
+        <Item>D:\Program Files\XAMPP\htdocs\Absoto</Item>
+        <Item>D:\Projects\Absoto</Item>
+    </Directories>
+    <Delay>0</Delay>
+    <Commandline>"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Projects\Absoto\SyncSettings.ffs_batch"</Commandline>
+</FreeFileSync>
