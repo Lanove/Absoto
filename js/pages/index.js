@@ -52,6 +52,7 @@ function initChartAbsensi() {
         },
         options: {
             responsive: true,
+            maintainAspectRatio:false,
             legend: {
                 position: 'top',
             },
@@ -83,6 +84,7 @@ function initChartAbsensi() {
         },
         options: {
             responsive: true,
+            maintainAspectRatio:false,
             legend: {
                 position: 'top',
             },
