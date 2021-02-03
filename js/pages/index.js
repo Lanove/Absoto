@@ -1,4 +1,6 @@
-﻿$(function () {
+﻿
+let chartMurid,chartGuru;
+$(function () {
     //Widgets count
     $('.count-to').countTo();
 
@@ -8,108 +10,86 @@
             return '$' + value.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, ' ').replace('.', ',');
         }
     });
-
-    initRealTimeChart();
-    initDonutChart();
-    initSparkline();
+    initChartAbsensi();
 });
 
-var realtime = 'on';
-function initRealTimeChart() {
-    //Real time ==========================================================================================
-    var plot = $.plot('#real_time_chart', [getRandomData()], {
-        series: {
-            shadowSize: 0,
-            color: 'rgb(0, 188, 212)'
+function initChartAbsensi() {
+    var ctx2 = document.getElementById('js-record-murid-chart').getContext('2d');
+    var ctx = document.getElementById('js-record-guru-chart').getContext('2d');
+    chartGuru = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['28/01/2021', '29/01/2021', '30/01/2021', '31/01/2021', '01/02/2021', '02/02/2021', '03/02/2021'],
+            datasets: [ {
+                label: 'Guru',
+                backgroundColor: $.AdminBSB.options.colors.blue,
+                borderColor: '#ffffff',
+                borderWidth: 1,
+                data: [
+                    22,
+                    22,
+                    22,
+                    0,
+                    22,
+                    22,
+                    21
+                ]
+            }, {
+                label: 'Karyawan',
+                backgroundColor: $.AdminBSB.options.colors.red,
+                borderColor: '#ffffff',
+                borderWidth: 1,
+                data: [
+                    9,
+                    10,
+                    9,
+                    2,
+                    10,
+                    10,
+                    10
+                ]
+            }]
         },
-        grid: {
-            borderColor: '#f3f3f3',
-            borderWidth: 1,
-            tickColor: '#f3f3f3'
-        },
-        lines: {
-            fill: true
-        },
-        yaxis: {
-            min: 0,
-            max: 100
-        },
-        xaxis: {
-            min: 0,
-            max: 100
+        options: {
+            responsive: true,
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Absensi Guru dan Karyawan'
+            }
         }
     });
-
-    function updateRealTime() {
-        plot.setData([getRandomData()]);
-        plot.draw();
-
-        var timeout;
-        if (realtime === 'on') {
-            timeout = setTimeout(updateRealTime, 320);
-        } else {
-            clearTimeout(timeout);
-        }
-    }
-
-    updateRealTime();
-
-    $('#realtime').on('change', function () {
-        realtime = this.checked ? 'on' : 'off';
-        updateRealTime();
-    });
-    //====================================================================================================
-}
-
-function initSparkline() {
-    $(".sparkline").each(function () {
-        var $this = $(this);
-        $this.sparkline('html', $this.data());
-    });
-}
-
-function initDonutChart() {
-    Morris.Donut({
-        element: 'donut_chart',
-        data: [{
-            label: 'Chrome',
-            value: 37
-        }, {
-            label: 'Firefox',
-            value: 30
-        }, {
-            label: 'Safari',
-            value: 18
-        }, {
-            label: 'Opera',
-            value: 12
+    chartMurid = new Chart(ctx2, {
+        type: 'bar',
+        data: {
+            labels: ['28/01/2021', '29/01/2021', '30/01/2021', '31/01/2021', '01/02/2021', '02/02/2021', '03/02/2021'],
+            datasets: [{
+                label: 'Murid',
+                backgroundColor: $.AdminBSB.options.colors.teal,
+                borderColor: '#ffffff',
+                borderWidth: 1,
+                data: [
+                    345,
+                    360,
+                    357,
+                    0,
+                    358,
+                    361,
+                    361
+                ]
+            } ]
         },
-        {
-            label: 'Other',
-            value: 3
-        }],
-        colors: ['rgb(233, 30, 99)', 'rgb(0, 188, 212)', 'rgb(255, 152, 0)', 'rgb(0, 150, 136)', 'rgb(96, 125, 139)'],
-        formatter: function (y) {
-            return y + '%'
+        options: {
+            responsive: true,
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Absensi Murid'
+            }
         }
     });
-}
-
-var data = [], totalPoints = 110;
-function getRandomData() {
-    if (data.length > 0) data = data.slice(1);
-
-    while (data.length < totalPoints) {
-        var prev = data.length > 0 ? data[data.length - 1] : 50, y = prev + Math.random() * 10 - 5;
-        if (y < 0) { y = 0; } else if (y > 100) { y = 100; }
-
-        data.push(y);
-    }
-
-    var res = [];
-    for (var i = 0; i < data.length; ++i) {
-        res.push([i, data[i]]);
-    }
-
-    return res;
 }

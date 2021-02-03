@@ -11,7 +11,7 @@ colors.setTheme({
     input: 'grey',
     verbose: 'cyan',
     prompt: 'grey',
-    info: 'green',
+    info: 'green', 
     data: 'grey',
     help: 'cyan',
     warn: 'yellow',

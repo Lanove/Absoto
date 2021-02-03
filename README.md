@@ -18,7 +18,8 @@ Dependencies
 npm install node-sass
 npm install colors
 ```
-**vscode extension**
+**VSCode extension**
+
 Run on Save by emeraldwalk
 
 Demo
