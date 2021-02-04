@@ -16,7 +16,19 @@ function signOut() {
     });
 }
 
-$(function () {
+/*
+https://stackoverflow.com/questions/40193553/load-event-on-script-with-async-and-or-defer
+window.onload waits for everything to load before firing whereas document.onload fires when the Document Object Model (DOM) is ready.
+
+So if you've got async scripts document.onload will execute first while window.onload will wait for those asynchronous scripts to finish loading.
+
+To summarize:
+
+window.onload will take async scripts into account.
+document.onload will not take async scripts into account.
+*/
+// We need to wait for gapi (which is async) to load before using it.
+window.onload = () => {
     let nama, email, photo, profile;
     if (window.location.href != loginPage) {
         gapi.load('auth2', function () {
@@ -35,4 +47,4 @@ $(function () {
             });
         });
     }
-})
+};

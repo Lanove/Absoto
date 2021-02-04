@@ -7,7 +7,8 @@
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
       name="viewport"
     />
-    <title>Kelas-Kelas</title>
+    <title>Guru dan Karyawan</title>
+
 
     <!-- Google Auth -->
     <meta
@@ -17,22 +18,14 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <!-- Favicon-->
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
     <link href="../plugins/node-waves/waves.css" rel="stylesheet" />
@@ -41,7 +34,7 @@
     <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="../css/themes/all-themes.css" rel="stylesheet" />
@@ -80,9 +73,7 @@
             aria-expanded="false"
           ></a>
           <a href="javascript:void(0);" class="bars"></a>
-          <span class="navbar-brand" href="../index.html"
-            >ABSOTO KELAS-KELAS</span
-          >
+          <span class="navbar-brand" href="../index.html">ABSOTO GURU DAN KARYAWAN</span>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -104,20 +95,27 @@
       <aside id="leftsidebar" class="sidebar">
         <!-- User Info -->
         <div class="user-info">
-          <div class="image">
-            <img id="js-pp" src="" width="48" height="48" alt="User" />
+            <div class="image">
+              <img
+                id="js-pp"
+                src=""
+                width="48"
+                height="48"
+                alt="User"
+              />
+            </div>
+            <div class="info-container">
+              <div
+                id="js-gname"
+                class="name"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+              </div>
+              <div id="js-gmail" class="email"></div>
+            </div>
           </div>
-          <div class="info-container">
-            <div
-              id="js-gname"
-              class="name"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            ></div>
-            <div id="js-gmail" class="email"></div>
-          </div>
-        </div>
         <!-- #User Info -->
         <!-- Menu -->
         <div class="menu">
@@ -129,14 +127,14 @@
                 <span>Dashboard</span>
               </a>
             </li>
-            <li class="active">
-              <a href="javascript:void(0);">
+            <li>
+              <a href="./kelas.html">
                 <i class="material-icons">home</i>
                 <span>Kelas-Kelas</span>
               </a>
             </li>
-            <li>
-              <a href="./guru.html">
+            <li class="active">
+              <a href="javascript:void(0);">
                 <i class="material-icons">supervisor_account</i>
                 <span>Guru dan Karyawan</span>
               </a>
@@ -327,157 +325,6 @@
       <div class="container-fluid">
         <!-- Widgets -->
         <div class="row clearfix">
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-teal hover-expand-effect clickable" onclick="window.location='http://localhost:8080/pages/kelas-inside.html?q=titl-10'">
-              <div class="icon">
-                <i class="material-icons">home</i>
-              </div>
-              <div class="content">
-                <div class="text">KELAS 10</div>
-                <div class="number">TITL</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-purple hover-expand-effect clickable" onclick="window.location='http://localhost:8080/pages/kelas-inside.html?q=dpib-10'">
-              <div class="icon">
-                <i class="material-icons">home</i>
-              </div>
-              <div class="content">
-                <div class="text">KELAS 10</div>
-                <div class="number">DPIB</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-blue hover-expand-effect clickable" onclick="window.location='http://localhost:8080/pages/kelas-inside.html?q=toi-10'">
-              <div class="icon">
-                <i class="material-icons">home</i>
-              </div>
-              <div class="content">
-                <div class="text">KELAS 10</div>
-                <div class="number">TOI</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-brown hover-expand-effect clickable" onclick="window.location='http://localhost:8080/pages/kelas-inside.html?q=tkj-10'">
-              <div class="icon">
-                <i class="material-icons">home</i>
-              </div>
-              <div class="content">
-                <div class="text">KELAS 10</div>
-                <div class="number">TKJ</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row clearfix">
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-indigo hover-expand-effect clickable" onclick="window.location='http://localhost:8080/pages/kelas-inside.html?q=titl-11'">
-              <div class="icon">
-                <i class="material-icons">home</i>
-              </div>
-              <div class="content">
-                <div class="text">KELAS 11</div>
-                <div class="number">TITL</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-pink hover-expand-effect clickable" onclick="window.location='http://localhost:8080/pages/kelas-inside.html?q=dpib-11'">
-              <div class="icon">
-                <i class="material-icons">home</i>
-              </div>
-              <div class="content">
-                <div class="text">KELAS 11</div>
-                <div class="number">DPIB</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-amber hover-expand-effect clickable" onclick="window.location='http://localhost:8080/pages/kelas-inside.html?q=toi-11'">
-              <div class="icon">
-                <i class="material-icons">home</i>
-              </div>
-              <div class="content">
-                <div class="text">KELAS 11</div>
-                <div class="number">TOI</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-grey hover-expand-effect clickable" onclick="window.location='http://localhost:8080/pages/kelas-inside.html?q=tkj-11'">
-              <div class="icon">
-                <i class="material-icons">home</i>
-              </div>
-              <div class="content">
-                <div class="text">KELAS 11</div>
-                <div class="number">TKJ</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row clearfix">
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-red hover-expand-effect clickable" onclick="window.location='http://localhost:8080/pages/kelas-inside.html?q=titl-12'">
-              <div class="icon">
-                <i class="material-icons">home</i>
-              </div>
-              <div class="content">
-                <div class="text">KELAS 12</div>
-                <div class="number">TITL</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-green hover-expand-effect clickable" onclick="window.location='http://localhost:8080/pages/kelas-inside.html?q=dpib-12'">
-              <div class="icon">
-                <i class="material-icons">home</i>
-              </div>
-              <div class="content">
-                <div class="text">KELAS 12</div>
-                <div class="number">DPIB</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-deep-orange hover-expand-effect clickable" onclick="window.location='http://localhost:8080/pages/kelas-inside.html?q=toi-12'">
-              <div class="icon">
-                <i class="material-icons">home</i>
-              </div>
-              <div class="content">
-                <div class="text">KELAS 12</div>
-                <div class="number">TOI</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-orange hover-expand-effect clickable" onclick="window.location='http://localhost:8080/pages/kelas-inside.html?q=tkj-12'">
-              <div class="icon">
-                <i class="material-icons">home</i>
-              </div>
-              <div class="content">
-                <div class="text">KELAS 12</div>
-                <div class="number">TKJ</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row clearfix">
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-red hover-expand-effect clickable" onclick="window.location='http://localhost:8080/pages/kelas-inside.html?q=semua-0'">
-              <div class="icon">
-                <i class="material-icons">face</i>
-              </div>
-              <div class="content">
-                <div class="text">SEMUA</div>
-                <div class="number">MURID</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -512,7 +359,7 @@
 
     <!-- Custom Js -->
     <script src="../js/admin.js"></script>
-    <script src="../js/pages/kelas.js"></script>
+    <script src="../js/pages/guru.js"></script>
 
     <!-- Demo Js -->
     <script src="../js/demo.js"></script>
