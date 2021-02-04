@@ -38,9 +38,9 @@ let dataTable,
         ["Unity Butler", "Marketing Designer", "San Francisco", "53.84", "2009/12/09", "$85,675"]
     ];
 
-$(document).ready(function () {
+$(function () {
     dataTable = $('.js-table').DataTable({
-        dom: 'lBfrtip',
+        dom: 'Bfrtilp',
         responsive: true,
         data: dataSet,
         columns: [
@@ -81,4 +81,9 @@ $(document).ready(function () {
                 element.className += " bg-red";
             });
     });
+    // Idk man, but entry length selector is buggy, this is the fix :
+    setTimeout(() => {
+        $("#DataTables_Table_0_length .bootstrap-select select[name=DataTables_Table_0_length]").insertBefore("#DataTables_Table_0_length .bootstrap-select");
+        $("#DataTables_Table_0_length .bootstrap-select").remove();
+    }, 1000);
 });

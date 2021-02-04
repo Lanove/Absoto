@@ -34,6 +34,16 @@ window.onload = () => {
         gapi.load('auth2', function () {
             auth2 = gapi.auth2.init();
             auth2.then(function () {
+                $.AdminBSB.browser.activate();
+                $.AdminBSB.leftSideBar.activate();
+                $.AdminBSB.rightSideBar.activate();
+                $.AdminBSB.navbar.activate();
+                $.AdminBSB.dropdownMenu.activate();
+                $.AdminBSB.input.activate();
+                $.AdminBSB.select.activate();
+                $.AdminBSB.search.activate();
+
+                setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
                 nama = document.querySelector("#js-gname");
                 email = document.querySelector("#js-gmail");
                 photo = document.querySelector("#js-pp");
