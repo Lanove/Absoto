@@ -16,7 +16,7 @@
   "homepage": "https://github.com/Lanove/Absoto#readme",
   "dependencies": {
     "@tensorflow/tfjs": "1.7.0",
-    "@tensorflow/tfjs-node": "1.7.0/",
+    "@tensorflow/tfjs-node": "1.7.0",
     "canvas": "^2.6.1",
     "colors": "^1.4.0",
     "face-api.js": "^0.22.2",

@@ -11,13 +11,14 @@ Looking for Premium Templates?
 ----------------
 **If you need more features please visit portfolio of mine which page link is [https://themeforest.net/user/gurayyarar/portfolio](http://bit.ly/2oPFpmQ)**
 
+Tested On
+----------------
+**Windows 10 Build 18363 Rev.0 Minor.0**
+**Node 10.19.0**
+**Python 3.8.7**
+**npm 6.13.4**
 Dependencies
 ----------------
-**npm**
-```
-npm install node-sass
-npm install colors
-```
 **VSCode extension**
 
 Run on Save by emeraldwalk
