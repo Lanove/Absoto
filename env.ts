@@ -1,5 +1,5 @@
-// const tf = require('@tensorflow/tfjs');
-const tf = require('@tensorflow/tfjs-node');
+const tf = require('@tensorflow/tfjs');
+require('@tensorflow/tfjs-node');
 const canvas = require("canvas");
 import * as faceapi from "face-api.js";
 import * as fs from "fs";
@@ -23,7 +23,7 @@ function saveFile(fileName: string, buf: Buffer) {
 async function run() {
   await faceNet.loadFromDisk("./weights");
 
-  const img = await canvas.loadImage("./images/bbt3.jpg");
+  const img = await canvas.loadImage("./images/bbt4.jpg");
   const detections = await faceapi.detectAllFaces(img, faceOption);
 
   const out = faceapi.createCanvasFromMedia(img) as any;
