@@ -15,7 +15,13 @@
   },
   "homepage": "https://github.com/Lanove/Absoto#readme",
   "dependencies": {
+    "@tensorflow/tfjs": "1.2.6",
+    "@tensorflow/tfjs-node": "1.2.6",
+    "canvas": "^2.6.1",
     "colors": "^1.4.0",
+    "dlib-build": "^0.1.1",
+    "face-api.js": "^0.22.2",
+    "node-gyp": "^7.1.2",
     "node-sass": "^5.0.0"
   }
 }

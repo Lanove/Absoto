@@ -1,55 +1,56 @@
 let dataTable,
     dataSet = [
-        ["Tiger Nixon", "System Architect", "Edinburgh", "54.21", "2011/04/25", "$320,800"],
-        ["Garrett Winters", "Accountant", "Tokyo", "84.22", "2011/07/25", "$170,750"],
-        ["Ashton Cox", "Junior Technical Author", "San Francisco", "15.62", "2009/01/12", "$86,000"],
-        ["Cedric Kelly", "Senior Javascript Developer", "Edinburgh", "62.24", "2012/03/29", "$433,060"],
-        ["Airi Satou", "Accountant", "Tokyo", "5407", "2008/11/28", "$162,700"],
-        ["Brielle Williamson", "Integration Specialist", "New York", "48.04", "2012/12/02", "$372,000"],
-        ["Herrod Chandler", "Sales Assistant", "San Francisco", "96.08", "2012/08/06", "$137,500"],
-        ["Rhona Davidson", "Integration Specialist", "Tokyo", "62.00", "2010/10/14", "$327,900"],
-        ["Colleen Hurst", "Javascript Developer", "San Francisco", "23.60", "2009/09/15", "$205,500"],
-        ["Sonya Frost", "Software Engineer", "Edinburgh", "16.67", "2008/12/13", "$103,600"],
-        ["Jena Gaines", "Office Manager", "London", "38.14", "2008/12/19", "$90,560"],
-        ["Quinn Flynn", "Support Lead", "Edinburgh", "94.97", "2013/03/03", "$342,000"],
-        ["Charde Marshall", "Regional Director", "San Francisco", "67.41", "2008/10/16", "$470,600"],
-        ["Haley Kennedy", "Senior Marketing Designer", "London", "35.97", "2012/12/18", "$313,500"],
-        ["Tatyana Fitzpatrick", "Regional Director", "London", "19.65", "2010/03/17", "$385,750"],
-        ["Michael Silva", "Marketing Designer", "London", "15.81", "2012/11/27", "$198,500"],
-        ["Paul Byrd", "Chief Financial Officer (CFO)", "New York", "3059", "2010/06/09", "$725,000"],
-        ["Gloria Little", "Systems Administrator", "New York", "17.21", "2009/04/10", "$237,500"],
-        ["Bradley Greer", "Software Engineer", "London", "25.58", "2012/10/13", "$132,000"],
-        ["Dai Rios", "Personnel Lead", "Edinburgh", "22.90", "2012/09/26", "$217,500"],
-        ["Jenette Caldwell", "Development Lead", "New York", "19.37", "2011/09/03", "$345,000"],
-        ["Yuri Berry", "Chief Marketing Officer (CMO)", "New York", "61.54", "2009/06/25", "$675,000"],
-        ["Caesar Vance", "Pre-Sales Support", "New York", "83.30", "2011/12/12", "$106,450"],
-        ["Doris Wilder", "Sales Assistant", "Sydney", "30.23", "2010/09/20", "$85,600"],
-        ["Angelica Ramos", "Chief Executive Officer (CEO)", "London", "5797", "2009/10/09", "$1,200,000"],
-        ["Gavin Joyce", "Developer", "Edinburgh", "88.22", "2010/12/22", "$92,575"],
-        ["Jennifer Chang", "Regional Director", "Singapore", "92.39", "2010/11/14", "$357,650"],
-        ["Brenden Wagner", "Software Engineer", "San Francisco", "13.14", "2011/06/07", "$206,850"],
-        ["Fiona Green", "Chief Operating Officer (COO)", "San Francisco", "2947", "2010/03/11", "$850,000"],
-        ["Shou Itou", "Regional Marketing", "Tokyo", "88.99", "2011/08/14", "$163,000"],
-        ["Michelle House", "Integration Specialist", "Sydney", "27.69", "2011/06/02", "$95,400"],
-        ["Suki Burks", "Developer", "London", "68.32", "2009/10/22", "$114,500"],
-        ["Prescott Bartlett", "Technical Author", "London", "36.06", "2011/05/07", "$145,000"],
-        ["Gavin Cortez", "Team Leader", "San Francisco", "28.60", "2008/10/26", "$235,500"],
-        ["Martena Mccray", "Post-Sales support", "Edinburgh", "82.40", "2011/03/09", "$324,050"],
-        ["Unity Butler", "Marketing Designer", "San Francisco", "53.84", "2009/12/09", "$85,675"]
+        ["2","Asmiati Sony", "2021/02/04 11:32:30","37.7","Ya"],
+        ["25","Sudarsih Mahmudah", "2021/02/04 10:28:44","37.8","Ya"],
+        ["20","Prima Azha Tridayana", "2021/02/04 8:54:20","38.9","Tidak"],
+        ["26","Susi Fallo", "2021/02/04 11:31:01","37.6","Ya"],
+        ["18","Nurul Hidayah", "2021/02/04 11:38:42","37.9","Ya"],
+        ["19","Peter Sulaiman", "2021/02/04 11:26:30","37.8","Ya"],
+        ["3","Aulia Rahma", "2021/02/04 10:55:43","37.7","Ya"],
+        ["31","Widi Dwi Armada", "2021/02/04 11:33:24","37.7","Ya"],
+        ["13","Levi Ardana", "2021/02/03 16:32:30","37.8","Ya"],
+        ["11","Feggy Maebara", "2021/02/04 9:17:29","37.6","Ya"],
+        ["22","Rika Himyati Hasna", "2021/02/04 13:34:44","37.9","Ya"],
+        ["23","Risma Nopia", "2021/02/04 10:59:51","37.8","Ya"],
+        ["8","Diah Ayu Rizki", "2021/02/04 09:12:32","37.6","Ya"],
+        ["29","Wahyu Aji Komara", "2021/02/03 10:41:30","38.0","Ya"],
+        ["12","Indri Shion", "2021/02/04 07:32:13","37.7","Ya"],
+        ["10","Evi Hafizah Rahma", "2021/02/04 10:58:19","37.9","Ya"],
+        ["28","Ulfa Mikasa Putri", "2021/02/04 09:42:27","37.7","Ya"],
+        ["16","Novi Noritasari", "2021/02/04 08:56:43","38.1","Ya"],
+        ["5","Delia Siviana", "2021/02/04 11:12:51","37.7","Ya"],
+        ["17","Nur Hartatik", "2021/02/04 09:43:39","37.9","Ya"],
+        ["6","Desi Aristyaningrum", "2021/02/04 12:13:46","37.8","Tidak"],
+        ["24","Shanti Madoka", "2021/02/04 12:22:55","37.8","Ya"],
+        ["27","Tri Yaeger", "2021/02/04 09:00:01","37.9","Ya"],
+        ["32","Winarti Mion", "2021/02/04 08:51:20","37.7","Ya"],
+        ["30","Wida Harmini Susilowati", "2021/02/04 10:44:07","37.6","Ya"],
+        ["14","Lilik Sasha", "2021/02/04 11:12:16","37.6","Ya"],
+        ["4","Budi Conny", "2021/02/04 13:42:15","37.7","Tidak"],
+        ["9","Dian Battler", "2021/02/04 07:32:23","37.8","Ya"],
+        ["7","Devy Sekar Ayu", "2021/02/04 11:08:58","37.9","Ya"],
+        ["15","Novan Tri", "2021/02/04 11:05:34","38.0","Ya"],
+        ["21","Renny Herlinawati", "2021/02/04 09:34:30","37.8","Ya"],
+        ["1","Adi Prima Laksana", "2021/02/04 09:51:29","37.7","Ya"],
     ];
 
 $(function () {
+    let urlParam = (new URLSearchParams(window.location.search)).get("q").split("-");
+    if (urlParam[0] != "semua")
+        $("#js-table-title").html(`MURID-MURID KELAS ${urlParam[1]} ${urlParam[0].toUpperCase()}`);
+    else
+        $("#js-table-title").html(`SEMUA MURID`);
+
     dataTable = $('.js-table').DataTable({
         dom: 'Bfrtilp',
         responsive: true,
         data: dataSet,
         columns: [
-            { title: "Name" },
-            { title: "Position" },
-            { title: "Office" },
-            { title: "Extn." },
-            { title: "Start date" },
-            { title: "Salary" }
+            { title: "#" },
+            { title: "Nama" },
+            { title: "Cek Terakhir" },
+            { title: "Suhu" },
+            { title: "Memakai Masker?" },
         ],
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
@@ -76,7 +77,7 @@ $(function () {
     });
     dataTable.rows().every(function (rowIdx, tableLoop, rowLoop) {
         var data = this.data();
-        if (data[3] <= 20)
+        if (parseFloat(data[3]) >= 38 || data[4] == "Tidak")
             dataTable.row(rowIdx).node().childNodes.forEach(element => {
                 element.className += " bg-red";
             });
