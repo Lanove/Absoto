@@ -14,9 +14,13 @@ Looking for Premium Templates?
 Tested On
 ----------------
 **Windows 10 Build 18363 Rev.0 Minor.0**
+
 **Node 10.19.0**
+
 **Python 3.8.7**
+
 **npm 6.13.4**
+
 Dependencies
 ----------------
 **VSCode extension**
