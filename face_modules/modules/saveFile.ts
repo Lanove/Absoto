@@ -19,20 +19,8 @@ export function readMultipleFiles(
   onError: (err: NodeJS.ErrnoException | null) => void
 ) {
   const dirname = path.resolve(baseDir, dirNameRelative);
-  fs.readdir(dirname, function (err, filenames) {
-    if (err) {
-      onError(err);
-      return;
-    }
-    filenames.forEach(function (filename) {
-      fs.readFile(path.resolve(dirname, filename), function (err, content) {
-        if (err) {
-          onError(err);
-          return;
-        }
-        onFileContent(filename, content);
-      });
-    });
+  fs.readdirSync(dirname).forEach((filename) => {
+    onFileContent(filename, fs.readFileSync(path.resolve(dirname, filename)));
   });
 }
 
