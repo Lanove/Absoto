@@ -37,5 +37,6 @@ async function run() {
 
   console.log(`done in ${Date.now() - startTime}ms`);
 }
+
 startTime = Date.now();
 run();
