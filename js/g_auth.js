@@ -1,5 +1,5 @@
-let loginPage = "http://localhost:8080/pages/log-in.html",
-    dashboardPage = "http://localhost:8080/index.html",
+let loginPage = "http://localhost:3000/pages/log-in.html",
+    dashboardPage = "http://localhost:3000/index.html",
     kelasPage = "http://localhost/absoto/pages/kelas.html",
     guruPage = "http://localhost/absoto/pages/guru.html",
     auth2;

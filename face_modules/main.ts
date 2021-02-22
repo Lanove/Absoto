@@ -21,18 +21,19 @@ async function run() {
   await faceRecognitionNet.loadFromDisk("./face_modules/models");
 
   // faceRecognition and output to image
-  const img = await canvas.loadImage(`./images/mbuh.jpg`);
+  const img = await canvas.loadImage(`./images/elonandboi.jpg`);
   const results = await faceapi
     .detectAllFaces(img, faceOption)
     .withFaceLandmarks()
     .withFaceDescriptors();
   const queryDrawBoxes = results.map(res => {
     const bestMatch = faceMatcher.findBestMatch(res.descriptor)
-    return new faceapi.draw.DrawBox(res.detection.box, { label: bestMatch.toString() })
+    console.log(bestMatch.toString());
+    // return new faceapi.draw.DrawBox(res.detection.box, { label: bestMatch.toString() })
   })
-  const outQuery = faceapi.createCanvasFromMedia(img)
-  queryDrawBoxes.forEach(drawBox => drawBox.draw(outQuery))
-  fileManager.saveFile('./face_modules/queryImage.jpg', (outQuery as any).toBuffer('image/jpeg'))
+  // const outQuery = faceapi.createCanvasFromMedia(img)
+  // queryDrawBoxes.forEach(drawBox => drawBox.draw(outQuery))
+  // fileManager.saveFile('./face_modules/queryImage.jpg', (outQuery as any).toBuffer('image/jpeg'))
 
   console.log(`done in ${Date.now() - startTime}ms`);
 }
